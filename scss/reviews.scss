@@ -1,0 +1,65 @@
+article .bubbles {
+
+    max-width: 1400px;
+    display: flex;
+}
+.bubbles {
+
+    display: flex;
+    flex-direction: column;
+    background: #f8f9fa;
+    padding: 40px 0;
+
+    
+  h2 {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 30px;
+    color: #21262f;
+    padding-bottom: 10px;
+  
+  
+  }
+  p {
+    display: flex;
+    text-align: center;
+    font-size: 0.5em;
+    color: #21262f87;
+  }
+  .imgbubble {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin: 20px auto;
+    gap: 10px;
+  
+  }
+  img {
+    flex: 1;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 100px;
+    object-fit: cover;
+    object-position: top;
+  }
+  .people {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    max-width: 500px;
+    gap: 50px;
+
+  }
+  }
+
+  @media(max-width: 760px) {
+   article .people {
+      display: flex;
+      flex-direction: column !important;
+      gap: 2px !important;
+    
+      
+    }
+  }

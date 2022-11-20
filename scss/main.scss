@@ -1,0 +1,119 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+  
+    article {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    position: relative;
+    color: #21262f;
+    max-width: 700px;
+    /* z-index: -1; */
+  }
+   article .container-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+    
+    
+  }
+   article h2 {
+    display: flex;
+    justify-self: left;
+    color: #21262f;
+    padding-top: 10px;
+    padding: 0px 20px;
+   }
+
+   article p {
+    display: flex;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    color:#21262f71 ;
+    letter-spacing: 0.5px;
+    padding-bottom: 10px;
+    padding: 0px 20px;
+  
+  }
+   .article-1 {
+    width: 50%;
+  }
+  
+   .article-2 {
+    background: url(../images/bg-showcase-1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+  }
+  
+  .article-3 {
+    background: url(../images/bg-showcase-2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+  }
+  
+  .article-4 {
+    width: 50%;
+  }
+  
+  .article-5 {
+    width: 50%;
+  }
+  
+  .article-6 {
+    background: url(../images/bg-showcase-3.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+  }
+ 
+  
+  }
+  @media(max-width: 760px) {
+    main {
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .article-2,.article-3,.article-6 {
+      min-width: 100%;
+      min-height: 300px;
+      background-position: left !important;
+    }
+
+    main  {
+
+      h2{
+      text-align: left !important;}
+      
+    }
+   
+    .article-1, .article-4, .article-5 {
+      min-width: 100%;
+    }
+   
+  
+      .container-3 {
+        // min-width: 200px;
+        min-height: 400px;
+        margin: 0px !important;
+        display: flex;
+        justify-content: center;
+        padding: 10px 30px;
+        
+        
+      }
+      .article-2:nth-of-type(2){
+        order: -1;
+      }
+      .article-5 {
+        order: calc(1);
+      }
+    
+    
+  }
